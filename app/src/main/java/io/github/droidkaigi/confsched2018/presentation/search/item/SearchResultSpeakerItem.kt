@@ -14,7 +14,7 @@ data class SearchResultSpeakerItem(
 ) : BindableItem<ItemSearchSpeakerBinding>(speaker.id.hashCode().toLong()) {
     override fun createViewHolder(itemView: View): ViewHolder<ItemSearchSpeakerBinding> {
         val viewDataBinding =
-                DataBindingUtil.bind<ItemSearchSpeakerBinding>(itemView)
+                DataBindingUtil.bind<ItemSearchSpeakerBinding>(itemView)!!
         return ViewHolder(viewDataBinding)
     }
 

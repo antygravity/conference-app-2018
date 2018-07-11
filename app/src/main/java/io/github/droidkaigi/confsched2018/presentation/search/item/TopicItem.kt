@@ -13,7 +13,7 @@ import io.github.droidkaigi.confsched2018.util.lang
 data class TopicItem(val topic: Topic) : BindableItem<ItemTopicBinding>(topic.id.toLong()) {
 
     override fun createViewHolder(itemView: View): ViewHolder<ItemTopicBinding> {
-        val viewDataBinding = DataBindingUtil.bind<ItemTopicBinding>(itemView)
+        val viewDataBinding = DataBindingUtil.bind<ItemTopicBinding>(itemView)!!
         return ViewHolder(viewDataBinding)
     }
 

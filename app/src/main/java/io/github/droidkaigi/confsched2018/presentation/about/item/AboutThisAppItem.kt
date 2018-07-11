@@ -13,7 +13,7 @@ data class AboutThisAppItem(
 ) : BindableItem<ItemAboutThisAppBinding>() {
 
     override fun createViewHolder(itemView: View): ViewHolder<ItemAboutThisAppBinding> {
-        return ViewHolder(DataBindingUtil.bind(itemView))
+        return ViewHolder(DataBindingUtil.bind(itemView)!!)
     }
 
     override fun getLayout(): Int = R.layout.item_about_this_app

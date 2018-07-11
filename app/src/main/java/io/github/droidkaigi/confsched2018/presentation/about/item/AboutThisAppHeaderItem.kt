@@ -15,7 +15,7 @@ class AboutThisAppHeaderItem(
 ) : BindableItem<ItemAboutThisAppHeaderBinding>() {
 
     override fun createViewHolder(itemView: View): ViewHolder<ItemAboutThisAppHeaderBinding> {
-        return ViewHolder(DataBindingUtil.bind(itemView))
+        return ViewHolder(DataBindingUtil.bind(itemView)!!)
     }
 
     override fun getLayout(): Int = R.layout.item_about_this_app_header

@@ -11,9 +11,10 @@ import io.github.droidkaigi.confsched2018.util.DebouncingOnClickListener
 
 class SpeakersAdapter(var context: Context, var speakerList: List<Speaker>, val textColor: Int) :
         RecyclerView.Adapter<SpeakersAdapter.BindingHolder>() {
+
     var onSpeakerClick: (view: View, speakerId: String) -> Unit = { _, _ -> }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): BindingHolder? {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BindingHolder {
         val layoutInflater = LayoutInflater.from(parent!!.context)
         val binding = ItemSpeakersSummaryLayoutBinding.inflate(layoutInflater, parent, false)
         return BindingHolder(binding)

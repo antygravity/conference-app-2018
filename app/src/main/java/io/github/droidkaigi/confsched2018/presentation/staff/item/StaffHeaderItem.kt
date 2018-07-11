@@ -13,7 +13,7 @@ class StaffHeaderItem(
 ) : BindableItem<ItemStaffHeaderBinding>() {
 
     override fun createViewHolder(itemView: View): ViewHolder<ItemStaffHeaderBinding> {
-        return ViewHolder(DataBindingUtil.bind(itemView))
+        return ViewHolder(DataBindingUtil.bind(itemView)!!)
     }
 
     override fun getLayout(): Int = R.layout.item_staff_header

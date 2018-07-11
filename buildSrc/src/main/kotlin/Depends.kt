@@ -54,7 +54,7 @@ object Depends {
     val rxbroadcast = "com.cantrowitz:rxbroadcast:2.0.0"
 
     object Binding {
-        val compiler = "com.android.databinding:compiler:3.0.1"
+        val compiler = "com.android.databinding:compiler:3.1.3"
     }
 
     object Dagger {
@@ -94,6 +94,7 @@ object Depends {
     object Groupie {
         val core = "com.xwray:groupie:${Versions.groupie}"
         val binding = "com.xwray:groupie-databinding:${Versions.groupie}"
+        val kotlinExtensions = "com.xwray:groupie-kotlin-android-extensions:${Versions.groupie}"
     }
 
     val downloadableCalligraphy = "com.github.takahirom.downloadable.calligraphy:downloadable-calligraphy:0.1.2"

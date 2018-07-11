@@ -13,7 +13,7 @@ class ContributorHeaderItem(
 ) : BindableItem<ItemContributorHeaderBinding>() {
 
     override fun createViewHolder(itemView: View): ViewHolder<ItemContributorHeaderBinding> {
-        return ViewHolder(DataBindingUtil.bind(itemView))
+        return ViewHolder(DataBindingUtil.bind(itemView)!!)
     }
 
     override fun getLayout(): Int = R.layout.item_contributor_header

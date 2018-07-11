@@ -14,7 +14,7 @@ data class SpeakerItem(
 
     override fun createViewHolder(itemView: View): ViewHolder<ItemSpeakerBinding> {
         val viewDataBinding =
-                DataBindingUtil.bind<ItemSpeakerBinding>(itemView)
+                DataBindingUtil.bind<ItemSpeakerBinding>(itemView)!!
         return ViewHolder(viewDataBinding)
     }
 
